@@ -1,0 +1,80 @@
+$form_bg_color : white;
+$border_color : darkturquoise;
+$width-100:100%;
+$border_radius:10px;
+$white:white;
+$black:black;
+$darkturquoise:darkturquoise;
+$darkgray :darkgray;
+@mixin width($width,$height) {
+  width: $width;
+  height: $height;
+  
+}
+@mixin border-radius($value) {
+  border-radius: $value;
+}
+body{
+ 
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+p{
+  color: $darkgray;
+}
+.form-group{
+  background-color: $form_bg_color;
+  @include width(300px,auto);
+  @include border-radius(5px);
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.form-items{
+  width: $width-100;
+  margin:auto;
+  input{
+    width: $width-100;
+    padding: 5px 5px 5px 5px;
+    outline: 0;
+    border: 0px;
+    margin-top: 20px;
+    border-bottom: 1px solid $border_color;
+   
+  }
+}
+.check{
+  display: flex;
+  p{
+    margin-left: 5px;
+  }
+}
+.btn{
+ 
+  display: flex;
+  justify-content: center;
+  a{
+   background-color: $darkturquoise;
+    padding: 13px 43px 13px 43px;
+   @include border-radius(20px);
+    text-decoration: none;
+    color: $white;
+  }
+  
+}
+
+.sign{
+  display: flex;
+  justify-content: center;
+  p{
+    a{
+      color: $darkturquoise;
+      text-decoration: none;
+    }
+  }
+}
+

@@ -1,0 +1,62 @@
+body {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+p {
+  color: darkgray;
+}
+
+.form-group {
+  background-color: white;
+  width: 300px;
+  height: auto;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  padding-left: 50px;
+  padding-right: 50px;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+}
+
+.form-items {
+  width: 100%;
+  margin: auto;
+}
+.form-items input {
+  width: 100%;
+  padding: 5px 5px 5px 5px;
+  outline: 0;
+  border: 0px;
+  margin-top: 20px;
+  border-bottom: 1px solid darkturquoise;
+}
+
+.check {
+  display: flex;
+}
+.check p {
+  margin-left: 5px;
+}
+
+.btn {
+  display: flex;
+  justify-content: center;
+}
+.btn a {
+  background-color: darkturquoise;
+  padding: 13px 43px 13px 43px;
+  border-radius: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.sign {
+  display: flex;
+  justify-content: center;
+}
+.sign p a {
+  color: darkturquoise;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
